@@ -1,4 +1,4 @@
-package org.service.taxchatbot.service;
+package org.service.taxchatbot.service.etl;
 
 import org.springframework.ai.document.Document;
 import org.springframework.ai.reader.tika.TikaDocumentReader;
@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-class MyTikaDocumentReader {
+public class MyTikaDocumentReader {
 
-    List<Document> loadText(Resource resource) {
+    public List<Document> loadText(Resource resource) {
         TikaDocumentReader tikaDocumentReader = new TikaDocumentReader(resource);
         return tikaDocumentReader.read();
     }
