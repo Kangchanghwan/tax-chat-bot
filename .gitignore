@@ -38,4 +38,4 @@ out/
 
 
 ### resouce ###
-*.docx
+/src/main/resources/docs/tax.docx
